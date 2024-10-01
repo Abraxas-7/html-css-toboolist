@@ -30,7 +30,6 @@ header{
 /*main*/
 main{
     background-color: #F6F8F9;
-    height: 2000px;
 }
 
 .container{
@@ -50,24 +49,27 @@ main{
     margin-bottom: 2px;
 }
 
-input{
+.button{
     padding: 6px;
     border-radius: 8px;
     transform: none;
     box-shadow: none;
+    display: inline-block;
+    margin-right: 4pxX;
 }
 
 .selected-button{
     background-color: #47ADF1;
     color: white;
-    border-color: transparent;
 }
 
 .unselected-button{
     background-color: white;
     color: gray;
-    border-color: lightgray;
+    border:1px solid lightgray;
 }
+
+
 
 /*task box*/
 #task-box{
@@ -99,11 +101,14 @@ h2:before{
     display: inline-block;
 }
 
+
+
+/* checkmark e cross */
 .checkmark:before{
     content: "\2713";
     font-size: 18px;
     color: #8ED2C1;
-    border: 1px solid #8ED2C1;
+    border: 2px solid #8ED2C1;
     border-radius: 50%;
     background-color: white;
     padding: 1px 6px;
@@ -114,7 +119,7 @@ h2:before{
     content: "\00D7";
     font-size: 20px;
     color: #EB5952;
-    border: 1px solid #EB5952;
+    border: 2px solid #EB5952;
     border-radius: 50%;
     background-color: white;
     padding: 0px 7px;
@@ -127,6 +132,11 @@ h2:before{
     margin-right: 8px;
 }
 
+
+
+/*tag degli elementi, potevo sistemarli sicuramente meglio,
+  magari facendo una base per il tag e poi da parte i colori 
+  o comunque le cose che variavano da tag a tag*/
 .editorial:after{
     content: 'Editorial';
     font-size: 12px;
